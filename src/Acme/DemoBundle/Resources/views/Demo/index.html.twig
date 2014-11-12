@@ -1,0 +1,7 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block body %}
+   EVENTS:
+    
+    <a href="{{path('_demo_log_without_event') }}">WITHOUT EVENTS</a> | <a href="{{path('_demo_log_with_event') }}">WITH EVENTS</a>
+{% endblock %}

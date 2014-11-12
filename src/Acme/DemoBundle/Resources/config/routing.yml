@@ -1,0 +1,4 @@
+_events:
+    resource: "@AcmeDemoBundle/Controller/DemoController.php"
+    type:     annotation
+    prefix:   /

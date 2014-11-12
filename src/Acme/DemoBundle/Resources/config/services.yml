@@ -1,0 +1,10 @@
+services:
+    mylogger:
+        class: Acme\DemoBundle\Services\Logger
+        arguments: ["@monolog.logger.demo"]
+        
+    my.listener:
+        class: Acme\DemoBundle\EventListener\DemoListener
+        arguments: ["@mylogger"]
+        tags:
+            - { name: kernel.event_subscriber} 
